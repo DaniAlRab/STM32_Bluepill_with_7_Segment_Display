@@ -1,7 +1,7 @@
 # STM32_Bluepill_with_7_Segment_Display 🚧
 ![Under Construction](https://img.shields.io/badge/status-under--construction-yellow)
 
-This little project shows how to use an STM32 with a 7 Segment Display without using any specific library for display
+This little project shows how to use an STM32 with a 7 Segment Display without using any specific library for the display
 
 1º - Identify your 7-segment display type.
 Common Anode
@@ -31,6 +31,8 @@ These pins have to be configured as outputs by editing the .ioc file in your pro
 
 3º - Create a digit map based on your pin choice.
 
+
+´´´
 //DIGIT MAP FOR ANODE COMMON 7 SEGMENTS DISPLAY
 
 const uint8_t digitMap[] = {
@@ -44,24 +46,26 @@ const uint8_t digitMap[] = {
   0b11111000, // 7
   0b10000000, // 8
   0b10010000, // 9
-	0b10001000, // A
-	0b10000011, // B
-	0b11000110, // C
-	0b10100001, // D
-	0b10000110, // E
-	0b10001110  // F
+  0b10001000, // A
+  0b10000011, // B
+  0b11000110, // C
+  0b10100001, // D
+  0b10000110, // E
+  0b10001110  // F
 };
 
+´´´
 
 Explaining digit MAP
+
 Ex: DIGIT 0
 
 0 b 1  1  0  0  0  0  0  0   // 0
     DP G  F  E  D  C  B  A   // SEGMENTS 
 
 
-This digit-Map make more easy the change digits without having to set segments by segment.
-This one works with the function SetDigit, which receives just one uint_8 digit and translates it to a 7-segment display
+This digit Map makes it easier to change digits without setting them segment by segment.
+This one works with the function SetDigit, which receives just one uint_8 digit and "translates" it to a 7-segment display
 
 
 void SetDigit(uint8_t digit)
