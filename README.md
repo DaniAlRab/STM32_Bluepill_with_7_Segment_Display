@@ -77,6 +77,16 @@ Ex: DIGIT 0
     DP G  F  E  D  C  B  A   // SEGMENTS 
 
 
+
+
+
+| Marking Code | Component Type | Package |
+| :--- | :---: | ---: |
+| `1A` | NPN Transistor | SOT-23 |
+| `R47` | Chip Resistor | 0805 |
+
+
+
 This digit Map makes it easier to change digits without setting them segment by segment.
 This one works with the function SetDigit, which receives just one uint_8 digit and "translates" it to a 7-segment display
 
