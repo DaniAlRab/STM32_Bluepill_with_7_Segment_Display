@@ -10,8 +10,12 @@ Common Cathode
 2º - Choose the pins that will be used to connect to the display segments.
 
 
+
 ex:
 These pins have to be configured as outputs by editing the .ioc file in your project.
+
+
+```C#
 
 {GPIOA, GPIO_PIN_10}, // A
 
@@ -28,11 +32,16 @@ These pins have to be configured as outputs by editing the .ioc file in your pro
 {GPIOA, GPIO_PIN_8}, // G
 
 {GPIOA, GPIO_PIN_12} // DP
+       
+```
+
 
 3º - Create a digit map based on your pin choice.
 
 
-´´´
+
+```C#
+
 //DIGIT MAP FOR ANODE COMMON 7 SEGMENTS DISPLAY
 
 const uint8_t digitMap[] = {
@@ -53,8 +62,12 @@ const uint8_t digitMap[] = {
   0b10000110, // E
   0b10001110  // F
 };
+       
+```
 
-´´´
+
+
+
 
 Explaining digit MAP
 
@@ -81,28 +94,3 @@ void SetDigit(uint8_t digit)
         HAL_GPIO_WritePin(seg[i].port, seg[i].pin, state);
     }
 }
-
-
-
-
-
-```C#
-//To be identified by system, Mouse down...
-
-       Mouse Down Picture Box 
-       private void pictureBox3_MouseDown(object sender, MouseEventArgs e)
-       {
-       }
-       
-```
-
-
-
-    
-
-
-
-
-
-
-
