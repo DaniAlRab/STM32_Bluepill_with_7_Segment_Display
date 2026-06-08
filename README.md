@@ -1,7 +1,7 @@
 # STM32_Bluepill_with_7_Segment_Display 🚧
 ![Under Construction](https://img.shields.io/badge/status-under--construction-yellow)
 
-This little project shows how to use an STM32 with a 7 Segment Display without using any specific library for the display
+This little project shows how to use an STM32 with a 7 Segment Display without using any specific library for this display
 
 1º - Identify your 7-segment display type.
 Common Anode
