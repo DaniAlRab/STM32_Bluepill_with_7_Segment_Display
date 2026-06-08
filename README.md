@@ -83,6 +83,8 @@ This digit Map makes it easier to change digits without setting them segment by 
 This one works with the function SetDigit, which receives just one uint_8 digit and "translates" it to a 7-segment display
 
 
+```C#
+
 void SetDigit(uint8_t digit)
 {
     if (digit > 17) return;
@@ -96,3 +98,5 @@ void SetDigit(uint8_t digit)
         HAL_GPIO_WritePin(seg[i].port, seg[i].pin, state);
     }
 }
+
+```
