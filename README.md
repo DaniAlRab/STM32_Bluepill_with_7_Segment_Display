@@ -85,6 +85,19 @@ void SetDigit(uint8_t digit)
 
 
 
+
+```C#
+//To be identified by system, Mouse down...
+
+       Mouse Down Picture Box 
+       private void pictureBox3_MouseDown(object sender, MouseEventArgs e)
+       {
+       }
+       
+```
+
+
+
     
 
 
