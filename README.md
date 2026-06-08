@@ -81,7 +81,7 @@ Ex: DIGIT 0
 
 This digit Map makes it easier to change digits without setting them segment by segment.
 
-This one works with the function SetDigit, which receives just one uint_8 digit and "translates" it to a 7-segment display
+This one works with the function SetDigit, which receives just one uint_8 digit and "translates" it to a 7-segment display format.
 
 
 ```C#
