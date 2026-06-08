@@ -80,10 +80,11 @@ Ex: DIGIT 0
 
 
 
-| Marking Code | Component Type | Package |
-| :--- | :---: | ---: |
-| `1A` | NPN Transistor | SOT-23 |
-| `R47` | Chip Resistor | 0805 |
+| 0 | b | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+| :--- | :---: | DP | G | F | E | D | C | B | A |
+| - | - | DP | G | F | E | D | C | B | A |
+
+
 
 
 
