@@ -4,8 +4,18 @@
 This little project shows how to use an STM32 with a 7 Segment Display without using any specific library for this display
 
 1º - Identify your 7-segment display type.
-Common Anode
-Common Cathode
+
+
+
+<img width="700" height="374" alt="image" src="https://github.com/user-attachments/assets/1cdfd86f-b0fb-41f9-937e-226606c29cfe" />
+
+
+
+Common Anode / Common Cathode
+
+
+
+
 
 2º - Choose the pins that will be used to connect to the display segments.
 
